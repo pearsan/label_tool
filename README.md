@@ -10,6 +10,12 @@ https://drive.google.com/drive/folders/1AqOqis_9wKTnn4siyx6cuznBUKY2F8Qe?usp=sha
 
 Config at: config.py
 
+Move to frontend directory:
+
+```
+cd back_end
+```
+
 Install packages:
 
 ```
@@ -19,6 +25,7 @@ pip3 install -r requirements.txt
 ```bat
 
 ```
+
 
 Run backend:
 
