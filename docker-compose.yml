@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  server:
+    build: ./back_end
+    ports:
+      - "5001:5001"
+    volumes:
+      - .back_end:/app/back_end
+  web:
+    build: ./front_end/tool_annotator
+    ports:
+      - "3003:3003"
+    depends_on:
+      - server
+    volumes:
+      - ./front_end/tool_annotator:/app/front_end/tool_annotator
