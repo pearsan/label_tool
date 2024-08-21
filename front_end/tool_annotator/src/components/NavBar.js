@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom'
 function NavBar({ title, isAuthenticated }) {
   return (
     <div className="nav flex-center space-around text-center">
-      <div className="nav-header">{title}</div>
-      <div className="nav-link">
+      <div className="nav-header">
+        <Link to="/" style={{color: 'white'}}>{title}</Link>
+      </div>
+      {/* <div className="nav-link">
         <Link to="/">Trang chủ</Link>
       </div>
       {isAuthenticated && (
@@ -28,9 +30,9 @@ function NavBar({ title, isAuthenticated }) {
         <div className="input-field-dark">
           <input type="text" placeholder="Search tag..." />
         </div>
-      </div>
+      </div> */}
     </div>
-  )
+  );
 }
 
 NavBar.propTypes = {
